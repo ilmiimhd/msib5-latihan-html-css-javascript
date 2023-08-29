@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Nilai Mahasiswa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Penilaian Mahasiswa</h1>
+        <label for="nama">Nama Mahasiswa:</label>
+        <input type="text" id="nama" required>
+    
+        <label for="matkul">Mata Kuliah:</label>
+        <input type="text" id="matkul" required>
+    
+        <label for="grade">Grade:</label>
+        <select id="grade">
+            <option value="">Pilih Grade</option>
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">E</option>
+        </select>
+    
+        <input type="button" value="Hitung" onclick="hitungRataRata()">
+    
+        <table id="resultTable" style="display: none;">
+            <tr>
+                <th>Nama Mahasiswa</th>
+                <th>Mata Kuliah</th>
+                <th>Grade</th>
+                <th>Nilai Rata-rata</th>
+            </tr>
+        </table>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
